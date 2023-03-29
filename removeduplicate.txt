@@ -1,0 +1,12 @@
+#Remove the duplicate elements in the array without using builtin function[ 5,4,10,20,4,6,10,39,4,39]
+arr = [5, 4, 10, 20, 4, 6, 10, 39, 4, 39]
+new_arr = []
+for i in arr:
+    if i not in new_arr:
+        new_arr.append(i)
+print("Original array:", arr)
+print("Array without duplicates:", new_arr)
+
+#Output
+Original array: [5, 4, 10, 20, 4, 6, 10, 39, 4, 39]
+Array without duplicates: [5, 4, 10, 20, 6, 39]

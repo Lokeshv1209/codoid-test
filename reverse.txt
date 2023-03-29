@@ -1,0 +1,11 @@
+#16.Array in reverse order
+a = [1, 2, 3, 4, 5]
+print("Original array:", a)
+print("Array in reverse order:")
+for i in range(4,-1,-1):
+    print(a[i],end=" ")
+
+#Output
+Original array: [1, 2, 3, 4, 5]
+Array in reverse order:
+5 4 3 2 1 

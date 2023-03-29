@@ -1,0 +1,23 @@
+#12.Fibonacci series program
+n= int(input("Enter the number of terms: "))
+a, b = 0, 1
+if n <= 0:
+   print("Please enter a positive integer")
+elif n == 1:
+   print("Fibonacci series upto",n,":")
+   print(a)
+else:
+   print("Fibonacci series")
+   fibonacciList = [a, b]
+   for i in range(2, n):
+       c = a + b
+       fibonacciList.append(c)
+       a = b
+       b = c
+   print(fibonacciList)
+
+#Output
+Enter the number of terms: 15
+Fibonacci sequence:
+[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377]
+
